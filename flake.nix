@@ -18,5 +18,13 @@
         {
           devShells.default = import ./shell.nix { inherit inputs' pkgs; };
         };
+
+      flake = {
+        templates = {
+          hello = {
+            path = ./hello;
+          };
+        };
+      };
     };
 }
